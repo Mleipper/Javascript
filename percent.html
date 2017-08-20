@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Percent calculator </title>
+ 
+    </head>
+
+    <body>
+        <div id="play-area">
+            
+                    <p>insert the number and the percentage of the number you wish to find</p>
+                    <p>number</p>
+                    <input type ="number" id="number" value ="0"><br>
+                    <p>percent: enter value between 0 - 100 </p>
+                    <input type = "number" id="percent" value="0" ><br>
+                    <button onclick= "myFuntion()" >calculate</button>
+                   
+               
+                <p id= "result"></p>
+                  <script>
+                      function myFuntion()
+                      {
+                          var number = document.getElementById("number").value;
+                          var percent = (document.getElementById("percent").value/100);
+                          var product = number * percent
+                          document.getElementById("result").innerHTML = product;
+        
+                      }
+    
+                </script>
+            
+        </div>
+    </body>
+</html>
